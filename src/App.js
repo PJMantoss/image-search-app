@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {ImageSearch} from './ImageSearch/ImageSearch';
 
 const API_KEY = "16244904-b76f429eabdbad43dc83fbdce";
 
@@ -27,7 +28,7 @@ export class App extends Component {
   render() {
     return (
       <div>
-        <div>App Component</div>
+        <ImageSearch/>
       </div>
     )
   }

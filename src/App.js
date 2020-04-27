@@ -3,8 +3,6 @@ import {ImageSearch} from './ImageSearch/ImageSearch';
 
 const API_KEY = "16244904-b76f429eabdbad43dc83fbdce";
 
-const url =  `https://pixabay.com/api/?key=${API_KEY}&q=yellow+flowers&image_type=photo`;
-
 export class App extends Component {
 
   state = {
@@ -12,8 +10,12 @@ export class App extends Component {
   }
 
   handleGetRequest = async (e) => {
-    
+
     e.preventDefault();
+
+    const searchTerm = e.target.element.searchValue.value;
+
+    const url =  `https://pixabay.com/api/?key=${API_KEY}&q=yellow+flowers&image_type=photo`;
 
     const request = await fetch(url);
 

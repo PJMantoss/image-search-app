@@ -11,7 +11,10 @@ export class App extends Component {
     images: []
   }
 
-  handleGetRequest = async () => {
+  handleGetRequest = async (e) => {
+    
+    e.preventDefault();
+
     const request = await fetch(url);
 
     const response = await request.json();
@@ -19,10 +22,6 @@ export class App extends Component {
     this.setState({ images: response.hits });
 
     console.log(response.hits);
-  }
-
-  componentDidMount(){
-    this.handleGetRequest();
   }
 
   render() {

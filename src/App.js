@@ -13,9 +13,9 @@ export class App extends Component {
 
     e.preventDefault();
 
-    const searchTerm = e.target.element.searchValue.value;
+    const searchTerm = e.target.elements.searchValue.value;
 
-    const url =  `https://pixabay.com/api/?key=${API_KEY}&q=yellow+flowers&image_type=photo`;
+    const url =  `https://pixabay.com/api/?key=${API_KEY}&q=${searchTerm}&image_type=photo`;
 
     const request = await fetch(url);
 

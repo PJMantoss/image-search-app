@@ -28,7 +28,7 @@ export class App extends Component {
   render() {
     return (
       <div>
-        <ImageSearch/>
+        <ImageSearch handleGetRequest={this.handleGetRequest}/>
       </div>
     )
   }

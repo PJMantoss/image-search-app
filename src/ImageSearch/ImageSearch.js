@@ -3,7 +3,7 @@ import React from 'react'
 export const ImageSearch = (props) => {
     return (
         <div>
-            <form onSubmit={pros.handleGetRequest}>
+            <form onSubmit={props.handleGetRequest}>
                 <input
                     type="text" 
                     name="searchValue" 

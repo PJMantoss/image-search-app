@@ -1,9 +1,9 @@
 import React from 'react'
 
-export const ImageSearch = () => {
+export const ImageSearch = (props) => {
     return (
         <div>
-            <form>
+            <form onSubmit={pros.handleGetRequest}>
                 <input
                     type="text" 
                     name="searchValue" 

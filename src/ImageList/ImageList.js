@@ -13,7 +13,10 @@ export const ImageList = (props) => {
                                 <img src={largeImageURL} alt={tags} className="imageList__image" />
                             </div>
 
-                            <button>Search</button>
+                            <div className="image__details">
+                                <button>Search</button>
+                            </div>
+                            
                         </div>
                         )
                     })

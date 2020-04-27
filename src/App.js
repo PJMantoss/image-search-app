@@ -6,8 +6,12 @@ const url =  `https://pixabay.com/api/?key=${API_KEY}&q=yellow+flowers&image_typ
 
 export class App extends Component {
 
-  handleGetRequest = () => {
-    console.log('Working!!')
+  handleGetRequest = async () => {
+    const request = await fetch(url);
+
+    const response = await request.json();
+
+    console.log(response);
   }
 
   componentDidMount(){

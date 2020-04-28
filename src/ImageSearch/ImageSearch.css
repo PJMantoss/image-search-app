@@ -1,0 +1,11 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.imageSearch {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+}

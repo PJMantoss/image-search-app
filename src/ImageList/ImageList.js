@@ -11,7 +11,7 @@ export const ImageList = (props) => {
                         <div key={id} className="imageList__container">
                                 <img src={largeImageURL} alt={tags} className="imageList__image" />
                                 <div className="image__details">
-                                    <button>Search</button>
+                                    <button>View</button>
                                 </div>
                         </div>
                         )

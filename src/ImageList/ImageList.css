@@ -1,8 +1,29 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+.imageList {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr/*repeat(auto-fit, minmax(300px, 1fr))*/;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 25px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
 .imageList__container {
-    border-radius: 1px;
+    background: rgb(219, 215, 215);
+    box-shadow: 1px 1px 2px black;
+    border-radius: 2px;
+    text-decoration: none;
     text-align: left;
     overflow: hidden;
-    box-shadow: -1px 2px 34px -13px rgba(0,0,0,0.55);;
 }
 
 .imageList__image {

@@ -13,7 +13,7 @@ export const ImageList = ({images}) => {
                                 <img src={image.largeImageURL} alt={image.tags} className="imageList__image" />
                                 <div className="image__details">
                                     <Link to={{
-                                        pathname: ``,
+                                        pathname: `/image/${image.id}`,
                                         state: {image}
                                     }}>
                                         <button>View</button>
